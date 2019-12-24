@@ -5,7 +5,7 @@ var server = net.createServer(socket => {
   socket.pipe(socket);
 
   socket.on('error', (err) => {
-    console.log(`Error: ${err}`);
+    console.log(`Error: ${err.message}`);
   })
 });
 
